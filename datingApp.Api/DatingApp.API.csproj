@@ -5,6 +5,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\**" />
+    <Content Remove="Migrations\**" />
+    <EmbeddedResource Remove="Migrations\**" />
+    <None Remove="Migrations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Migrations\20190412190426_InitialMigrationDating.cs" />
+    <Compile Include="Migrations\20190412190426_InitialMigrationDating.Designer.cs" />
+    <Compile Include="Migrations\20190412195127_UserMigrated.cs" />
+    <Compile Include="Migrations\20190412195127_UserMigrated.Designer.cs" />
+    <Compile Include="Migrations\DataContextModelSnapshot.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
